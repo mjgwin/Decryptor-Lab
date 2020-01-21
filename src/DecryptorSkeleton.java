@@ -22,7 +22,7 @@ import java.util.HashMap;
  * Place your @author tags here.
  * @author First Last : netid@iastate.edu
  * @author ...
- * @author ...
+ * @author ...Anthony Nuss : tonynuss@iastate.edu
  * @author ...
  */
 public class DecryptorSkeleton {
@@ -78,6 +78,18 @@ public class DecryptorSkeleton {
      */
     public static void shiftArrayValues(int[] toDecrypt) {
         // TODO
+    	for(int i = 0; i < toDecrypt.length; i++) {
+    		if(toDecrypt[i] % 3 == 0) {
+    			toDecrypt[i]--;
+    		}
+    		else if(toDecrypt[i] % 3 == 1) {
+    			toDecrypt[i] -= 2;
+    		}
+    		else(toDecrypt[i]) {
+    			toDecrypt[i] -= 3;
+    		}
+    	}
+    	
     }
 
 
