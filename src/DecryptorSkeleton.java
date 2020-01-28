@@ -23,7 +23,7 @@ import java.util.HashMap;
  * @author First Last : netid@iastate.edu
  * @author ... Micah Gwin mjgwin@iastate.edu
  * @author ...
- * @author ...
+ * @author ...Jeffery Kasper jmkasper@gmail.com
  */
 public class DecryptorSkeleton {
     public static void main(String[] args) {
@@ -90,9 +90,6 @@ public class DecryptorSkeleton {
      */
     public static void shiftArrayValues(int[] toDecrypt) {
         // TODO
-    	for(int i = 0; i < toDecrypt.length;i++) {
-    		i /= 5
-    	}
     }
 
 
@@ -109,6 +106,9 @@ public class DecryptorSkeleton {
      */
     public static void divideArrayValues(int[] toDecrypt) {
         // TODO
+    	for(int i = 0; i < toDecrypt.length;i++) {
+    		i /= 5
+    	}
     	
     }
 
