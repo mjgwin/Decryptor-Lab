@@ -175,7 +175,11 @@ public class DecryptorSkeleton {
         StringBuilder solution = new StringBuilder();
 
         // TODO
-
+        
+        for(int i = 0; i < toDecrypt.length; i++) {
+        	toDecrypt[i]=cypher.get(toDecrypt[i]);
+        	solution.append(toDecypt[i]);
+    	}
         solution.append('!');
         return solution.toString();
     }
