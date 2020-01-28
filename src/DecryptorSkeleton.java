@@ -96,10 +96,10 @@ public class DecryptorSkeleton {
     public static void shiftArrayValues(int[] toDecrypt) {
         // TODO
     	for(int i = 0; i < toDecrypt.length; i++) {
-    		if(toDecrypt[i] % 3 == 0) {
+    		if(i % 3 == 0) {
     			toDecrypt[i]--;
     		}
-    		else if(toDecrypt[i] % 3 == 1) {
+    		else if(i % 3 == 1) {
     			toDecrypt[i] -= 2;
     			
     		}else{
@@ -125,7 +125,7 @@ public class DecryptorSkeleton {
     public static void divideArrayValues(int[] toDecrypt) {
         // TODO
     	for(int i = 0; i < toDecrypt.length;i++) {
-    		i /= 5;
+    		toDecrypt[i] /= 5;
     	}
     	
     }
@@ -177,8 +177,8 @@ public class DecryptorSkeleton {
         // TODO
         
         for(int i = 0; i < toDecrypt.length; i++) {
-        	toDecrypt[i]=cypher.get(toDecrypt[i]);
-        	solution.append(toDecypt[i]);
+        	
+        	solution.append(cypher.get(toDecrypt[i]));
     	}
         solution.append('!');
         return solution.toString();
