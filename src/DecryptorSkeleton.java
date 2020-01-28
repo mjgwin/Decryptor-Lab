@@ -21,9 +21,14 @@ import java.util.HashMap;
  *
  * Place your @author tags here.
  * @author First Last : netid@iastate.edu
+ * @author ... Micah Gwin mjgwin@iastate.edu
  * @author ...
+<<<<<<< HEAD
  * @author ...Anthony Nuss : tonynuss@iastate.edu
  * @author ...
+=======
+ * @author ...Jeffery Kasper jmkasper@gmail.com
+>>>>>>> 572b6046edd2923f6af5d3156e9699f11cca55a5
  */
 public class DecryptorSkeleton {
     public static void main(String[] args) {
@@ -58,7 +63,19 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void convertBinaryArrayToDecimalArray(int[] toDecrypt) {
-        // TODO
+        for(int i = 0; i < toDecrypt.length;i++) {
+        	int num = toDecrypt[i];
+        	int dec = 0, j = 1, remain;
+        	
+        	while(num!=0) {
+        		remain = num % 10;
+        		dec = dec + remain * j;
+        		j = j * 2;
+        		num = num / 10;
+        	}
+        	
+        	toDecrypt[i] = dec;
+        }
     }
 
 
@@ -106,6 +123,10 @@ public class DecryptorSkeleton {
      */
     public static void divideArrayValues(int[] toDecrypt) {
         // TODO
+    	for(int i = 0; i < toDecrypt.length;i++) {
+    		i /= 5
+    	}
+    	
     }
 
 
