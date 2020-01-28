@@ -101,8 +101,9 @@ public class DecryptorSkeleton {
     		}
     		else if(toDecrypt[i] % 3 == 1) {
     			toDecrypt[i] -= 2;
-    		}
-    		else(toDecrypt[i]) {
+    			
+    		}else{
+    			
     			toDecrypt[i] -= 3;
     		}
     	}
@@ -124,7 +125,7 @@ public class DecryptorSkeleton {
     public static void divideArrayValues(int[] toDecrypt) {
         // TODO
     	for(int i = 0; i < toDecrypt.length;i++) {
-    		i /= 5
+    		i /= 5;
     	}
     	
     }
